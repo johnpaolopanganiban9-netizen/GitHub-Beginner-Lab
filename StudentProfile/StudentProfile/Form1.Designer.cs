@@ -29,23 +29,37 @@
         private void InitializeComponent()
         {
             lblGitHubBeginnerLab = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // lblGitHubBeginnerLab
             // 
             lblGitHubBeginnerLab.AutoSize = true;
-            lblGitHubBeginnerLab.Location = new Point(301, 159);
+            lblGitHubBeginnerLab.Location = new Point(211, 95);
+            lblGitHubBeginnerLab.Margin = new Padding(2, 0, 2, 0);
             lblGitHubBeginnerLab.Name = "lblGitHubBeginnerLab";
-            lblGitHubBeginnerLab.Size = new Size(175, 25);
+            lblGitHubBeginnerLab.Size = new Size(117, 15);
             lblGitHubBeginnerLab.TabIndex = 0;
             lblGitHubBeginnerLab.Text = "GitHub Beginner Lab";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(179, 126);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(156, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Contact Number: 093450945";
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
+            Controls.Add(label1);
             Controls.Add(lblGitHubBeginnerLab);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -55,5 +69,6 @@
         #endregion
 
         private Label lblGitHubBeginnerLab;
+        private Label label1;
     }
 }
