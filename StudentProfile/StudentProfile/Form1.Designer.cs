@@ -30,12 +30,14 @@
         {
             lblGitHubBeginnerLab = new Label();
             label1 = new Label();
+            txtSearch = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // lblGitHubBeginnerLab
             // 
             lblGitHubBeginnerLab.AutoSize = true;
-            lblGitHubBeginnerLab.Location = new Point(211, 95);
+            lblGitHubBeginnerLab.Location = new Point(11, 9);
             lblGitHubBeginnerLab.Margin = new Padding(2, 0, 2, 0);
             lblGitHubBeginnerLab.Name = "lblGitHubBeginnerLab";
             lblGitHubBeginnerLab.Size = new Size(117, 15);
@@ -45,21 +47,41 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(179, 126);
+            label1.Location = new Point(11, 42);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(156, 15);
             label1.TabIndex = 1;
             label1.Text = "Contact Number: 093450945";
             // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(399, 12);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(149, 23);
+            txtSearch.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(346, 15);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(48, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Search: ";
+            label2.Click += label2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 270);
+            Controls.Add(label2);
+            Controls.Add(txtSearch);
             Controls.Add(label1);
             Controls.Add(lblGitHubBeginnerLab);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -70,5 +92,7 @@
 
         private Label lblGitHubBeginnerLab;
         private Label label1;
+        private TextBox txtSearch;
+        private Label label2;
     }
 }
