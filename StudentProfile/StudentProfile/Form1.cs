@@ -6,5 +6,10 @@ namespace StudentProfile
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Searched: " + txtSearch.Text);
+        }
     }
 }
