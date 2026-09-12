@@ -9,7 +9,7 @@ namespace StudentProfile
 
         private void label2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Searched: " + txtSearch.Text);
+            MessageBox.Show("Searched: " + txtSearch.Text +"\nStudent Email: "+ txtEmail.Text);
         }
     }
 }
